@@ -63,7 +63,6 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/bin/aee_aedv64:$(TARGET_COPY_OUT_VENDOR)/bin/aee_aedv64 \
     vendor/tecno/le7n/proprietary/vendor/bin/aee_dumpstatev:$(TARGET_COPY_OUT_VENDOR)/bin/aee_dumpstatev \
     vendor/tecno/le7n/proprietary/vendor/bin/aeev:$(TARGET_COPY_OUT_VENDOR)/bin/aeev \
-    vendor/tecno/le7n/proprietary/vendor/bin/applypatch:$(TARGET_COPY_OUT_VENDOR)/bin/applypatch \
     vendor/tecno/le7n/proprietary/vendor/bin/atcid:$(TARGET_COPY_OUT_VENDOR)/bin/atcid \
     vendor/tecno/le7n/proprietary/vendor/bin/audiocmdservice_atci:$(TARGET_COPY_OUT_VENDOR)/bin/audiocmdservice_atci \
     vendor/tecno/le7n/proprietary/vendor/bin/autobt:$(TARGET_COPY_OUT_VENDOR)/bin/autobt \
