@@ -87,7 +87,6 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/bin/hostapd_cli:$(TARGET_COPY_OUT_VENDOR)/bin/hostapd_cli \
     vendor/tecno/le7n/proprietary/vendor/bin/hw/android.hardware.audio.service.mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.audio.service.mediatek \
     vendor/tecno/le7n/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.0-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.0-service-mediatek \
-    vendor/tecno/le7n/proprietary/vendor/bin/hw/android.hardware.cas@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.cas@1.2-service \
     vendor/tecno/le7n/proprietary/vendor/bin/hw/android.hardware.drm@1.3-service.clearkey:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.3-service.clearkey \
     vendor/tecno/le7n/proprietary/vendor/bin/hw/android.hardware.drm@1.3-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.3-service.widevine \
     vendor/tecno/le7n/proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper@1.0-service \
@@ -432,7 +431,6 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/etc/init/aee_aedv64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/aee_aedv64.rc \
     vendor/tecno/le7n/proprietary/vendor/etc/init/android.hardware.audio.service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.audio.service.mediatek.rc \
     vendor/tecno/le7n/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-mediatek.rc \
-    vendor/tecno/le7n/proprietary/vendor/etc/init/android.hardware.cas@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.cas@1.2-service.rc \
     vendor/tecno/le7n/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.clearkey.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.clearkey.rc \
     vendor/tecno/le7n/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
     vendor/tecno/le7n/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service.rc \
