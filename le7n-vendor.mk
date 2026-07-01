@@ -801,7 +801,6 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/lib/gc02m1b_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/gc02m1b_mipi_raw_tuning.so \
     vendor/tecno/le7n/proprietary/vendor/lib/gc6153_serial_yuv_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/gc6153_serial_yuv_tuning.so \
     vendor/tecno/le7n/proprietary/vendor/lib/gc8034_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/gc8034_mipi_raw_tuning.so \
-    vendor/tecno/le7n/proprietary/vendor/lib/hw/android.hardware.audio.effect@6.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio.effect@6.0-impl.so \
     vendor/tecno/le7n/proprietary/vendor/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so \
     vendor/tecno/le7n/proprietary/vendor/lib/hw/android.hardware.gatekeeper@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gatekeeper@1.0-impl.so \
     vendor/tecno/le7n/proprietary/vendor/lib/hw/android.hardware.graphics.composer@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.graphics.composer@2.1-impl.so \
@@ -1089,7 +1088,6 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/lib64/gc6153_serial_yuv_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/gc6153_serial_yuv_tuning.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/gc8034_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/gc8034_mipi_raw_IdxMgr.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/gc8034_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/gc8034_mipi_raw_tuning.so \
-    vendor/tecno/le7n/proprietary/vendor/lib64/hw/android.hardware.audio.effect@6.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.audio.effect@6.0-impl.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/hw/android.hardware.bluetooth.audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth.audio@2.0-impl.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gatekeeper@1.0-impl.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/hw/android.hardware.graphics.composer@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.graphics.composer@2.1-impl.so \
