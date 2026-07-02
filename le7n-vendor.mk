@@ -806,7 +806,6 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/lib/hw/audio.primary.mt6768.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.mt6768.so \
     vendor/tecno/le7n/proprietary/vendor/lib/hw/audio.r_submix.mt6768.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.r_submix.mt6768.so \
     vendor/tecno/le7n/proprietary/vendor/lib/hw/audio.usb.mt6768.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.usb.mt6768.so \
-    vendor/tecno/le7n/proprietary/vendor/lib/hw/audio_policy.stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio_policy.stub.so \
     vendor/tecno/le7n/proprietary/vendor/lib/hw/dfps.mt6768.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/dfps.mt6768.so \
     vendor/tecno/le7n/proprietary/vendor/lib/hw/fingerprint.silead.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/fingerprint.silead.default.so \
     vendor/tecno/le7n/proprietary/vendor/lib/hw/fpsensor_fingerprint.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/fpsensor_fingerprint.default.so \
@@ -1084,7 +1083,6 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/lib64/hw/audio.primary.mt6768.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.mt6768.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/hw/audio.r_submix.mt6768.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.r_submix.mt6768.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/hw/audio.usb.mt6768.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.usb.mt6768.so \
-    vendor/tecno/le7n/proprietary/vendor/lib64/hw/audio_policy.stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio_policy.stub.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/hw/dfps.mt6768.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/dfps.mt6768.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/hw/fingerprint.silead.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.silead.default.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/hw/fpsensor_fingerprint.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fpsensor_fingerprint.default.so \
