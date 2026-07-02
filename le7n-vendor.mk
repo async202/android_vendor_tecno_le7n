@@ -816,7 +816,6 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/lib/hw/libSoftGatekeeper.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/libSoftGatekeeper.so \
     vendor/tecno/le7n/proprietary/vendor/lib/hw/lights.mt6768.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/lights.mt6768.so \
     vendor/tecno/le7n/proprietary/vendor/lib/hw/memtrack.mt6768.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/memtrack.mt6768.so \
-    vendor/tecno/le7n/proprietary/vendor/lib/hw/power.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/power.default.so \
     vendor/tecno/le7n/proprietary/vendor/lib/hw/power.mt6768.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/power.mt6768.so \
     vendor/tecno/le7n/proprietary/vendor/lib/hw/thermal.mt6768.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/thermal.mt6768.so \
     vendor/tecno/le7n/proprietary/vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so \
@@ -1092,7 +1091,6 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/lib64/hw/libSoftGatekeeper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/libSoftGatekeeper.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/hw/lights.mt6768.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/lights.mt6768.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/hw/memtrack.mt6768.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/memtrack.mt6768.so \
-    vendor/tecno/le7n/proprietary/vendor/lib64/hw/power.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/power.default.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/hw/power.mt6768.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/power.mt6768.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/hw/sensors.mt6768.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.mt6768.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/hw/thermal.mt6768.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/thermal.mt6768.so \
