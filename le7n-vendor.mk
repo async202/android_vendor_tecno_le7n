@@ -1015,7 +1015,6 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/lib/s5kgm1stext2_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/s5kgm1stext2_mipi_raw_tuning.so \
     vendor/tecno/le7n/proprietary/vendor/lib/soundfx/libaudiopreprocessing_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libaudiopreprocessing_mtk.so \
     vendor/tecno/le7n/proprietary/vendor/lib/soundfx/libdiraceffect.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libdiraceffect.so \
-    vendor/tecno/le7n/proprietary/vendor/lib/soundfx/libdynproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libdynproc.so \
     vendor/tecno/le7n/proprietary/vendor/lib/vendor.fpsensor.hardware.fpsensorhidlsvc@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.fpsensor.hardware.fpsensorhidlsvc@2.0.so \
     vendor/tecno/le7n/proprietary/vendor/lib/vendor.mediatek.hardware.audio@6.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.audio@6.1.so \
     vendor/tecno/le7n/proprietary/vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so \
@@ -1492,7 +1491,6 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/lib64/s5kgm1stext2_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/s5kgm1stext2_mipi_raw_IdxMgr.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/s5kgm1stext2_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/s5kgm1stext2_mipi_raw_tuning.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/soundfx/libaudiopreprocessing_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libaudiopreprocessing_mtk.so \
-    vendor/tecno/le7n/proprietary/vendor/lib64/soundfx/libdynproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libdynproc.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/vendor.fpsensor.hardware.fpsensorhidlsvc@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.fpsensor.hardware.fpsensorhidlsvc@2.0.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/vendor.mediatek.hardware.aee@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.aee@1.0.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/vendor.mediatek.hardware.atci@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.atci@1.0.so \
