@@ -978,7 +978,6 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/lib/libtflite_mtk_static_R.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtflite_mtk_static_R.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libthermalalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthermalalgo.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libthha.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthha.so \
-    vendor/tecno/le7n/proprietary/vendor/lib/libtinyxml.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyxml.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libtranlog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtranlog.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libudf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libudf.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libutinterface_custom_md.so:$(TARGET_COPY_OUT_VENDOR)/lib/libutinterface_custom_md.so \
@@ -1444,7 +1443,6 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/lib64/libtflite_native_inference.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtflite_native_inference.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libtflite_native_seginference.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtflite_native_seginference.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libthha.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthha.so \
-    vendor/tecno/le7n/proprietary/vendor/lib64/libtinyxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libtneclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtneclient.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libtnev.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtnev.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libtranlog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtranlog.so \
