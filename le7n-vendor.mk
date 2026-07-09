@@ -22,6 +22,10 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/etc/hearing_aid_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/hearing_aid_audio_policy_configuration.xml \
     vendor/tecno/le7n/proprietary/etc/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/r_submix_audio_policy_configuration.xml \
     vendor/tecno/le7n/proprietary/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/usb_audio_policy_configuration.xml \
+    vendor/tecno/le7n/proprietary/lib/libmedia_codeclist.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmedia_codeclist.so \
+    vendor/tecno/le7n/proprietary/lib/libstagefright_bufferpool@2.0.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libstagefright_bufferpool@2.0.1.so \
+    vendor/tecno/le7n/proprietary/lib/libstagefright_codecbase.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libstagefright_codecbase.so \
+    vendor/tecno/le7n/proprietary/lib/libstagefright_framecapture_utils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libstagefright_framecapture_utils.so \
     vendor/tecno/le7n/proprietary/lib/libstagefright_wfd_mtk.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libstagefright_wfd_mtk.so \
     vendor/tecno/le7n/proprietary/lib/vendor.mediatek.hardware.mms@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.mediatek.hardware.mms@1.0.so \
     vendor/tecno/le7n/proprietary/lib/vendor.mediatek.hardware.mms@1.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.mediatek.hardware.mms@1.1.so \
@@ -31,6 +35,10 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/lib/vendor.mediatek.hardware.pq@2.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.mediatek.hardware.pq@2.1.so \
     vendor/tecno/le7n/proprietary/lib/vendor.mediatek.hardware.pq@2.2.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.mediatek.hardware.pq@2.2.so \
     vendor/tecno/le7n/proprietary/lib/vendor.mediatek.hardware.pq@2.3.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.mediatek.hardware.pq@2.3.so \
+    vendor/tecno/le7n/proprietary/lib64/libmedia_codeclist.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmedia_codeclist.so \
+    vendor/tecno/le7n/proprietary/lib64/libstagefright_bufferpool@2.0.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libstagefright_bufferpool@2.0.1.so \
+    vendor/tecno/le7n/proprietary/lib64/libstagefright_codecbase.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libstagefright_codecbase.so \
+    vendor/tecno/le7n/proprietary/lib64/libstagefright_framecapture_utils.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libstagefright_framecapture_utils.so \
     vendor/tecno/le7n/proprietary/lib64/vendor.mediatek.hardware.mms@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.mediatek.hardware.mms@1.0.so \
     vendor/tecno/le7n/proprietary/lib64/vendor.mediatek.hardware.mms@1.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.mediatek.hardware.mms@1.1.so \
     vendor/tecno/le7n/proprietary/lib64/vendor.mediatek.hardware.mms@1.2.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.mediatek.hardware.mms@1.2.so \
@@ -58,15 +66,24 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/system_ext/lib64/vendor.mediatek.hardware.mtkradioex@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.mtkradioex@1.0.so \
     vendor/tecno/le7n/proprietary/system_ext/lib64/vendor.mediatek.hardware.nwk_opt@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.nwk_opt@1.0.so \
     vendor/tecno/le7n/proprietary/system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.videotelephony@1.0.so \
+    vendor/tecno/le7n/proprietary/vendor/app/GoogleNetworkStackResOverlay/GoogleNetworkStackResOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/app/GoogleNetworkStackResOverlay/GoogleNetworkStackResOverlay.apk \
+    vendor/tecno/le7n/proprietary/vendor/app/GoogleTetheringResOverlay/GoogleTetheringResOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/app/GoogleTetheringResOverlay/GoogleTetheringResOverlay.apk \
+    vendor/tecno/le7n/proprietary/vendor/app/InProcessTetheringResOverlay/InProcessTetheringResOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/app/InProcessTetheringResOverlay/InProcessTetheringResOverlay.apk \
+    vendor/tecno/le7n/proprietary/vendor/app/NetworkStackInProcessResOverlay/NetworkStackInProcessResOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/app/NetworkStackInProcessResOverlay/NetworkStackInProcessResOverlay.apk \
+    vendor/tecno/le7n/proprietary/vendor/app/NetworkStackResOverlay/NetworkStackResOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/app/NetworkStackResOverlay/NetworkStackResOverlay.apk \
+    vendor/tecno/le7n/proprietary/vendor/app/TetheringResOverlay/TetheringResOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/app/TetheringResOverlay/TetheringResOverlay.apk \
     vendor/tecno/le7n/proprietary/vendor/bin/STFlashTool:$(TARGET_COPY_OUT_VENDOR)/bin/STFlashTool \
     vendor/tecno/le7n/proprietary/vendor/bin/aee_aedv:$(TARGET_COPY_OUT_VENDOR)/bin/aee_aedv \
     vendor/tecno/le7n/proprietary/vendor/bin/aee_aedv64:$(TARGET_COPY_OUT_VENDOR)/bin/aee_aedv64 \
     vendor/tecno/le7n/proprietary/vendor/bin/aee_dumpstatev:$(TARGET_COPY_OUT_VENDOR)/bin/aee_dumpstatev \
     vendor/tecno/le7n/proprietary/vendor/bin/aeev:$(TARGET_COPY_OUT_VENDOR)/bin/aeev \
+    vendor/tecno/le7n/proprietary/vendor/bin/applypatch:$(TARGET_COPY_OUT_VENDOR)/bin/applypatch \
     vendor/tecno/le7n/proprietary/vendor/bin/atcid:$(TARGET_COPY_OUT_VENDOR)/bin/atcid \
     vendor/tecno/le7n/proprietary/vendor/bin/audiocmdservice_atci:$(TARGET_COPY_OUT_VENDOR)/bin/audiocmdservice_atci \
     vendor/tecno/le7n/proprietary/vendor/bin/autobt:$(TARGET_COPY_OUT_VENDOR)/bin/autobt \
     vendor/tecno/le7n/proprietary/vendor/bin/bip:$(TARGET_COPY_OUT_VENDOR)/bin/bip \
+    vendor/tecno/le7n/proprietary/vendor/bin/boringssl_self_test32:$(TARGET_COPY_OUT_VENDOR)/bin/boringssl_self_test32 \
+    vendor/tecno/le7n/proprietary/vendor/bin/boringssl_self_test64:$(TARGET_COPY_OUT_VENDOR)/bin/boringssl_self_test64 \
     vendor/tecno/le7n/proprietary/vendor/bin/bp_kmsetkey_ca:$(TARGET_COPY_OUT_VENDOR)/bin/bp_kmsetkey_ca \
     vendor/tecno/le7n/proprietary/vendor/bin/ccci_fsd:$(TARGET_COPY_OUT_VENDOR)/bin/ccci_fsd \
     vendor/tecno/le7n/proprietary/vendor/bin/ccci_mdinit:$(TARGET_COPY_OUT_VENDOR)/bin/ccci_mdinit \
@@ -77,6 +94,7 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/bin/doeapp-memtester:$(TARGET_COPY_OUT_VENDOR)/bin/doeapp-memtester \
     vendor/tecno/le7n/proprietary/vendor/bin/doeapp-sat:$(TARGET_COPY_OUT_VENDOR)/bin/doeapp-sat \
     vendor/tecno/le7n/proprietary/vendor/bin/dtc_vendor:$(TARGET_COPY_OUT_VENDOR)/bin/dtc_vendor \
+    vendor/tecno/le7n/proprietary/vendor/bin/dumpsys:$(TARGET_COPY_OUT_VENDOR)/bin/dumpsys \
     vendor/tecno/le7n/proprietary/vendor/bin/em_hidl:$(TARGET_COPY_OUT_VENDOR)/bin/em_hidl \
     vendor/tecno/le7n/proprietary/vendor/bin/epdg_wod:$(TARGET_COPY_OUT_VENDOR)/bin/epdg_wod \
     vendor/tecno/le7n/proprietary/vendor/bin/factory:$(TARGET_COPY_OUT_VENDOR)/bin/factory \
@@ -86,12 +104,21 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/bin/gsm0710muxd:$(TARGET_COPY_OUT_VENDOR)/bin/gsm0710muxd \
     vendor/tecno/le7n/proprietary/vendor/bin/hostapd_cli:$(TARGET_COPY_OUT_VENDOR)/bin/hostapd_cli \
     vendor/tecno/le7n/proprietary/vendor/bin/hw/android.hardware.audio.service.mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.audio.service.mediatek \
+    vendor/tecno/le7n/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-service \
     vendor/tecno/le7n/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.0-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.0-service-mediatek \
+    vendor/tecno/le7n/proprietary/vendor/bin/hw/android.hardware.boot@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.boot@1.1-service \
+    vendor/tecno/le7n/proprietary/vendor/bin/hw/android.hardware.cas@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.cas@1.2-service \
+    vendor/tecno/le7n/proprietary/vendor/bin/hw/android.hardware.drm@1.3-service.clearkey:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.3-service.clearkey \
     vendor/tecno/le7n/proprietary/vendor/bin/hw/android.hardware.drm@1.3-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.3-service.widevine \
+    vendor/tecno/le7n/proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper@1.0-service \
     vendor/tecno/le7n/proprietary/vendor/bin/hw/android.hardware.gnss@2.1-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gnss@2.1-service-mediatek \
     vendor/tecno/le7n/proprietary/vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek \
+    vendor/tecno/le7n/proprietary/vendor/bin/hw/android.hardware.graphics.composer@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.graphics.composer@2.1-service \
+    vendor/tecno/le7n/proprietary/vendor/bin/hw/android.hardware.health@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.health@2.1-service \
     vendor/tecno/le7n/proprietary/vendor/bin/hw/android.hardware.keymaster@4.0-service.beanpod:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.0-service.beanpod \
     vendor/tecno/le7n/proprietary/vendor/bin/hw/android.hardware.lights-service.mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.lights-service.mediatek \
+    vendor/tecno/le7n/proprietary/vendor/bin/hw/android.hardware.media.omx@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.media.omx@1.0-service \
+    vendor/tecno/le7n/proprietary/vendor/bin/hw/android.hardware.memtrack@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.memtrack@1.0-service \
     vendor/tecno/le7n/proprietary/vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron \
     vendor/tecno/le7n/proprietary/vendor/bin/hw/android.hardware.nfc@1.2-service-st:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.nfc@1.2-service-st \
     vendor/tecno/le7n/proprietary/vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.secure_element@1.2-service-mediatek \
@@ -99,6 +126,7 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/bin/hw/android.hardware.thermal@2.0-service.mtk:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.thermal@2.0-service.mtk \
     vendor/tecno/le7n/proprietary/vendor/bin/hw/android.hardware.usb@1.1-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.usb@1.1-service-mediatek \
     vendor/tecno/le7n/proprietary/vendor/bin/hw/android.hardware.vibrator-service.mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.vibrator-service.mediatek \
+    vendor/tecno/le7n/proprietary/vendor/bin/hw/android.hardware.wifi@1.0-service-lazy:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.wifi@1.0-service-lazy \
     vendor/tecno/le7n/proprietary/vendor/bin/hw/camerahalserver:$(TARGET_COPY_OUT_VENDOR)/bin/hw/camerahalserver \
     vendor/tecno/le7n/proprietary/vendor/bin/hw/hostapd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/hostapd \
     vendor/tecno/le7n/proprietary/vendor/bin/hw/mtkfusionrild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/mtkfusionrild \
@@ -404,6 +432,7 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/etc/ecc_list_preference.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_preference.xml \
     vendor/tecno/le7n/proprietary/vendor/etc/factory.ini:$(TARGET_COPY_OUT_VENDOR)/etc/factory.ini \
     vendor/tecno/le7n/proprietary/vendor/etc/fstab.enableswap:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.enableswap \
+    vendor/tecno/le7n/proprietary/vendor/etc/fstab.mt6768:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.mt6768 \
     vendor/tecno/le7n/proprietary/vendor/etc/fstb.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/fstb.cfg \
     vendor/tecno/le7n/proprietary/vendor/etc/gnss/agps_profiles_conf2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/agps_profiles_conf2.xml \
     vendor/tecno/le7n/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml \
@@ -422,11 +451,20 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/etc/init/aee_aedv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/aee_aedv.rc \
     vendor/tecno/le7n/proprietary/vendor/etc/init/aee_aedv64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/aee_aedv64.rc \
     vendor/tecno/le7n/proprietary/vendor/etc/init/android.hardware.audio.service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.audio.service.mediatek.rc \
+    vendor/tecno/le7n/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/tecno/le7n/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-mediatek.rc \
+    vendor/tecno/le7n/proprietary/vendor/etc/init/android.hardware.boot@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.boot@1.1-service.rc \
+    vendor/tecno/le7n/proprietary/vendor/etc/init/android.hardware.cas@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.cas@1.2-service.rc \
+    vendor/tecno/le7n/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.clearkey.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.clearkey.rc \
     vendor/tecno/le7n/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
+    vendor/tecno/le7n/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service.rc \
     vendor/tecno/le7n/proprietary/vendor/etc/init/android.hardware.gnss@2.1-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss@2.1-service-mediatek.rc \
     vendor/tecno/le7n/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc \
+    vendor/tecno/le7n/proprietary/vendor/etc/init/android.hardware.graphics.composer@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.composer@2.1-service.rc \
+    vendor/tecno/le7n/proprietary/vendor/etc/init/android.hardware.health@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.health@2.1-service.rc \
     vendor/tecno/le7n/proprietary/vendor/etc/init/android.hardware.keymaster@4.0-service.beanpod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.0-service.beanpod.rc \
+    vendor/tecno/le7n/proprietary/vendor/etc/init/android.hardware.media.omx@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.omx@1.0-service.rc \
+    vendor/tecno/le7n/proprietary/vendor/etc/init/android.hardware.memtrack@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.memtrack@1.0-service.rc \
     vendor/tecno/le7n/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc \
     vendor/tecno/le7n/proprietary/vendor/etc/init/android.hardware.nfc@1.2-service-st.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.nfc@1.2-service-st.rc \
     vendor/tecno/le7n/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc \
@@ -434,9 +472,11 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/etc/init/android.hardware.thermal@2.0-service.mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.thermal@2.0-service.mtk.rc \
     vendor/tecno/le7n/proprietary/vendor/etc/init/android.hardware.usb@1.1-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb@1.1-service-mediatek.rc \
     vendor/tecno/le7n/proprietary/vendor/etc/init/android.hardware.wifi.supplicant-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi.supplicant-service.rc \
+    vendor/tecno/le7n/proprietary/vendor/etc/init/android.hardware.wifi@1.0-service-lazy.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi@1.0-service-lazy.rc \
     vendor/tecno/le7n/proprietary/vendor/etc/init/atcid.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/atcid.rc \
     vendor/tecno/le7n/proprietary/vendor/etc/init/audiocmdservice_atci.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/audiocmdservice_atci.rc \
     vendor/tecno/le7n/proprietary/vendor/etc/init/bootperf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/bootperf.rc \
+    vendor/tecno/le7n/proprietary/vendor/etc/init/boringssl_self_test.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/boringssl_self_test.rc \
     vendor/tecno/le7n/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
     vendor/tecno/le7n/proprietary/vendor/etc/init/em_hidl_user.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/em_hidl_user.rc \
     vendor/tecno/le7n/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
@@ -510,7 +550,9 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/etc/init/vendor.silead.hardware.fingerprintext@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.silead.hardware.fingerprintext@1.0-service.rc \
     vendor/tecno/le7n/proprietary/vendor/etc/init/vendor.silead.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.silead.rc \
     vendor/tecno/le7n/proprietary/vendor/etc/init/vendor.transsion.hardware.trancam.trancamserver@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.transsion.hardware.trancam.trancamserver@1.0-service.rc \
+    vendor/tecno/le7n/proprietary/vendor/etc/init/vendor_flash_recovery.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor_flash_recovery.rc \
     vendor/tecno/le7n/proprietary/vendor/etc/init/vibrator-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vibrator-mtk-default.rc \
+    vendor/tecno/le7n/proprietary/vendor/etc/init/vndservicemanager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vndservicemanager.rc \
     vendor/tecno/le7n/proprietary/vendor/etc/init/vpud.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vpud.rc \
     vendor/tecno/le7n/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
     vendor/tecno/le7n/proprietary/vendor/etc/ipsec/ipsec.conf:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.conf \
@@ -542,6 +584,7 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/etc/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
     vendor/tecno/le7n/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
     vendor/tecno/le7n/proprietary/vendor/etc/meow.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/meow.cfg \
+    vendor/tecno/le7n/proprietary/vendor/etc/mkshrc:$(TARGET_COPY_OUT_VENDOR)/etc/mkshrc \
     vendor/tecno/le7n/proprietary/vendor/etc/mtk_omx_core.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_omx_core.cfg \
     vendor/tecno/le7n/proprietary/vendor/etc/partition_permission.sh:$(TARGET_COPY_OUT_VENDOR)/etc/partition_permission.sh \
     vendor/tecno/le7n/proprietary/vendor/etc/performance/blacklist.json:$(TARGET_COPY_OUT_VENDOR)/etc/performance/blacklist.json \
@@ -560,6 +603,46 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/etc/performance/whitelist_4g_ram.json:$(TARGET_COPY_OUT_VENDOR)/etc/performance/whitelist_4g_ram.json \
     vendor/tecno/le7n/proprietary/vendor/etc/performance/whitelist_6g_ram.json:$(TARGET_COPY_OUT_VENDOR)/etc/performance/whitelist_6g_ram.json \
     vendor/tecno/le7n/proprietary/vendor/etc/performance/whitelist_8g_ram.json:$(TARGET_COPY_OUT_VENDOR)/etc/performance/whitelist_8g_ram.json \
+    vendor/tecno/le7n/proprietary/vendor/etc/permissions/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/permissions/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/permissions/android.hardware.bluetooth_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth_le.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/permissions/android.hardware.camera.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/permissions/android.hardware.faketouch.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.faketouch.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/permissions/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/permissions/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/permissions/android.hardware.microphone.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.microphone.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/permissions/android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hce.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/permissions/android.hardware.nfc.hcef.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hcef.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/permissions/android.hardware.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/permissions/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/permissions/android.hardware.se.omapi.uicc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.se.omapi.uicc.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/permissions/android.hardware.sensor.accelerometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.accelerometer.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/permissions/android.hardware.sensor.compass.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.compass.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/permissions/android.hardware.sensor.gyroscope.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.gyroscope.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/permissions/android.hardware.sensor.light.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.light.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/permissions/android.hardware.sensor.proximity.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.proximity.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/permissions/android.hardware.sensor.stepcounter.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepcounter.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/permissions/android.hardware.sensor.stepdetector.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepdetector.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/permissions/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.gsm.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/permissions/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.ims.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/permissions/android.hardware.touchscreen.multitouch.distinct.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.distinct.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/permissions/android.hardware.touchscreen.multitouch.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/permissions/android.hardware.touchscreen.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/permissions/android.hardware.usb.accessory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.accessory.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/permissions/android.hardware.usb.host.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.host.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/permissions/android.hardware.vulkan.compute.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.compute.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/permissions/android.hardware.vulkan.level.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.level.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/permissions/android.hardware.vulkan.version.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.version.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/permissions/android.hardware.wifi.direct.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.direct.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/permissions/android.hardware.wifi.passpoint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.passpoint.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/permissions/android.hardware.wifi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/permissions/android.software.ipsec_tunnels.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.ipsec_tunnels.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/permissions/android.software.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.midi.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/permissions/android.software.verified_boot.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.verified_boot.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/permissions/android.software.vulkan.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level-2020-03-01.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/permissions/android.software.vulkan.deqp.level.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/permissions/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml \
     vendor/tecno/le7n/proprietary/vendor/etc/pnpmgr.db:$(TARGET_COPY_OUT_VENDOR)/etc/pnpmgr.db \
     vendor/tecno/le7n/proprietary/vendor/etc/power_app_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/power_app_cfg.xml \
     vendor/tecno/le7n/proprietary/vendor/etc/powercontable.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powercontable.xml \
@@ -567,6 +650,8 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     vendor/tecno/le7n/proprietary/vendor/etc/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
     vendor/tecno/le7n/proprietary/vendor/etc/scene_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/scene_config.json \
+    vendor/tecno/le7n/proprietary/vendor/etc/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
+    vendor/tecno/le7n/proprietary/vendor/etc/seccomp_policy/mediaextractor.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy \
     vendor/tecno/le7n/proprietary/vendor/etc/seccomp_policy/mediaswcodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaswcodec.policy \
     vendor/tecno/le7n/proprietary/vendor/etc/security/cacerts/00673b5b.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/00673b5b.0 \
     vendor/tecno/le7n/proprietary/vendor/etc/security/cacerts/04f60c28.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/04f60c28.0 \
@@ -741,6 +826,26 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/etc/tran_camprofiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/tran_camprofiles.xml \
     vendor/tecno/le7n/proprietary/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
     vendor/tecno/le7n/proprietary/vendor/etc/vendor-apns-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vendor-apns-conf.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/vintf/manifest/android.hardware.boot@1.1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.boot@1.1.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/vintf/manifest/android.hardware.cas@1.2-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.cas@1.2-service.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/vintf/manifest/android.hardware.gpu@1.0-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.gpu@1.0-service.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/vintf/manifest/android.hardware.health@2.1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.health@2.1.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-mtk-gpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-mtk-gpu.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.wifi.hostapd.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/vintf/manifest/lights-mtk-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/lights-mtk-default.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/vintf/manifest/manifest.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/manifest.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.clearkey.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.clearkey.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/vintf/manifest/manifest_storage.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/manifest_storage.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/vintf/manifest/manifest_tneengine.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/manifest_tneengine.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/vintf/manifest/power-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/power-default.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/vintf/manifest/vendor.mediatek.hardware.dplanner@2.0-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.mediatek.hardware.dplanner@2.0-service.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/vintf/manifest/vendor.mediatek.hardware.paytrigger@1.0-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.mediatek.hardware.paytrigger@1.0-service.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/vintf/manifest/vendor.mediatek.hardware.tranHwInfo@1.0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.mediatek.hardware.tranHwInfo@1.0.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/vintf/manifest/vendor.transsion.hardware.trancam.trancamserver@1.0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.transsion.hardware.trancam.trancamserver@1.0.xml \
+    vendor/tecno/le7n/proprietary/vendor/etc/vintf/manifest/vibrator-mtk-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vibrator-mtk-default.xml \
     vendor/tecno/le7n/proprietary/vendor/etc/virtual-spn-conf-by-efgid1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efgid1.xml \
     vendor/tecno/le7n/proprietary/vendor/etc/virtual-spn-conf-by-efpnn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efpnn.xml \
     vendor/tecno/le7n/proprietary/vendor/etc/virtual-spn-conf-by-efspn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efspn.xml \
@@ -801,21 +906,38 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/lib/gc02m1b_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/gc02m1b_mipi_raw_tuning.so \
     vendor/tecno/le7n/proprietary/vendor/lib/gc6153_serial_yuv_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/gc6153_serial_yuv_tuning.so \
     vendor/tecno/le7n/proprietary/vendor/lib/gc8034_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/gc8034_mipi_raw_tuning.so \
+    vendor/tecno/le7n/proprietary/vendor/lib/hw/android.hardware.audio.effect@6.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio.effect@6.0-impl.so \
+    vendor/tecno/le7n/proprietary/vendor/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so \
+    vendor/tecno/le7n/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth@1.0-impl-mediatek.so \
+    vendor/tecno/le7n/proprietary/vendor/lib/hw/android.hardware.gatekeeper@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gatekeeper@1.0-impl.so \
+    vendor/tecno/le7n/proprietary/vendor/lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so \
     vendor/tecno/le7n/proprietary/vendor/lib/hw/android.hardware.graphics.composer@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.graphics.composer@2.1-impl.so \
+    vendor/tecno/le7n/proprietary/vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so \
+    vendor/tecno/le7n/proprietary/vendor/lib/hw/android.hardware.memtrack@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.memtrack@1.0-impl.so \
+    vendor/tecno/le7n/proprietary/vendor/lib/hw/android.hardware.renderscript@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.renderscript@1.0-impl.so \
+    vendor/tecno/le7n/proprietary/vendor/lib/hw/android.hardware.thermal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.thermal@1.0-impl.so \
     vendor/tecno/le7n/proprietary/vendor/lib/hw/android.hardware.thermal@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.thermal@2.0-impl.so \
+    vendor/tecno/le7n/proprietary/vendor/lib/hw/audio.bluetooth.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.bluetooth.default.so \
+    vendor/tecno/le7n/proprietary/vendor/lib/hw/audio.primary.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.default.so \
     vendor/tecno/le7n/proprietary/vendor/lib/hw/audio.primary.mt6768.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.mt6768.so \
+    vendor/tecno/le7n/proprietary/vendor/lib/hw/audio.r_submix.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.r_submix.default.so \
     vendor/tecno/le7n/proprietary/vendor/lib/hw/audio.r_submix.mt6768.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.r_submix.mt6768.so \
+    vendor/tecno/le7n/proprietary/vendor/lib/hw/audio.usb.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.usb.default.so \
     vendor/tecno/le7n/proprietary/vendor/lib/hw/audio.usb.mt6768.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.usb.mt6768.so \
+    vendor/tecno/le7n/proprietary/vendor/lib/hw/audio_policy.stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio_policy.stub.so \
     vendor/tecno/le7n/proprietary/vendor/lib/hw/dfps.mt6768.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/dfps.mt6768.so \
     vendor/tecno/le7n/proprietary/vendor/lib/hw/fingerprint.silead.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/fingerprint.silead.default.so \
     vendor/tecno/le7n/proprietary/vendor/lib/hw/fpsensor_fingerprint.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/fpsensor_fingerprint.default.so \
     vendor/tecno/le7n/proprietary/vendor/lib/hw/gatekeeper.beanpod.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gatekeeper.beanpod.so \
     vendor/tecno/le7n/proprietary/vendor/lib/hw/gatekeeper.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gatekeeper.default.so \
     vendor/tecno/le7n/proprietary/vendor/lib/hw/gps.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gps.default.so \
+    vendor/tecno/le7n/proprietary/vendor/lib/hw/gralloc.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gralloc.default.so \
     vendor/tecno/le7n/proprietary/vendor/lib/hw/kmsetkey.beanpod.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/kmsetkey.beanpod.so \
     vendor/tecno/le7n/proprietary/vendor/lib/hw/libSoftGatekeeper.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/libSoftGatekeeper.so \
     vendor/tecno/le7n/proprietary/vendor/lib/hw/lights.mt6768.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/lights.mt6768.so \
+    vendor/tecno/le7n/proprietary/vendor/lib/hw/local_time.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/local_time.default.so \
     vendor/tecno/le7n/proprietary/vendor/lib/hw/memtrack.mt6768.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/memtrack.mt6768.so \
+    vendor/tecno/le7n/proprietary/vendor/lib/hw/power.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/power.default.so \
     vendor/tecno/le7n/proprietary/vendor/lib/hw/power.mt6768.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/power.mt6768.so \
     vendor/tecno/le7n/proprietary/vendor/lib/hw/thermal.mt6768.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/thermal.mt6768.so \
     vendor/tecno/le7n/proprietary/vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so \
@@ -828,6 +950,7 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/lib/hw/vendor.mediatek.hardware.nvram@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.nvram@1.1-impl.so \
     vendor/tecno/le7n/proprietary/vendor/lib/hw/vendor.mediatek.hardware.pq@2.6-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.pq@2.6-impl.so \
     vendor/tecno/le7n/proprietary/vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so \
+    vendor/tecno/le7n/proprietary/vendor/lib/hw/vibrator.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vibrator.default.so \
     vendor/tecno/le7n/proprietary/vendor/lib/hw/vibrator.mt6768.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vibrator.mt6768.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libDR.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libDefaultFpsActor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libDefaultFpsActor.so \
@@ -854,6 +977,7 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/lib/libaal_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaal_mtk.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libaalservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaalservice.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libaedv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaedv.so \
+    vendor/tecno/le7n/proprietary/vendor/lib/libalsautils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libalsautils.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libarmnn_ndk.mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarmnn_ndk.mtk.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libaudio_param_parser-vnd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudio_param_parser-vnd.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libaudiocompensationfilter_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiocompensationfilter_vendor.so \
@@ -863,12 +987,14 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/lib/libaudiocustparam_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiocustparam_vendor.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libaudiodcrflt_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiodcrflt_vendor.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libaudiofmtconv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiofmtconv.so \
+    vendor/tecno/le7n/proprietary/vendor/lib/libaudiofoundation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiofoundation.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libaudioloudc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioloudc.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libaudioprimarydevicehalifclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioprimarydevicehalifclient.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libaudiotoolkit_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiotoolkit_vendor.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libaurisysdemo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaurisysdemo.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libbessound_hd_mtk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbessound_hd_mtk_vendor.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libblisrc32_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libblisrc32_vendor.so \
+    vendor/tecno/le7n/proprietary/vendor/lib/libbluetooth_audio_session.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libbluetooth_audio_session_mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session_mediatek.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libbluetooth_hw_test.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_hw_test.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libbluetooth_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_mtk.so \
@@ -893,15 +1019,20 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/lib/libcvsd_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcvsd_mtk.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libdiracapwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdiracapwrapper.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libdpframework.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdpframework.so \
+    vendor/tecno/le7n/proprietary/vendor/lib/libdrm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrm.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libfgauge_gm30.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfgauge_gm30.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libfile_op.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfile_op.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libfp_ext_svc2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfp_ext_svc2.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libfpspolicy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfpspolicy.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libfsmaudio.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfsmaudio.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libged.so:$(TARGET_COPY_OUT_VENDOR)/lib/libged.so \
+    vendor/tecno/le7n/proprietary/vendor/lib/egl/libged.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libged.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libgpu_aux.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgpu_aux.so \
+    vendor/tecno/le7n/proprietary/vendor/lib/egl/libgpu_aux.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libgpu_aux.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libgpud.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgpud.so \
+    vendor/tecno/le7n/proprietary/vendor/lib/egl/libgpud.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libgpud.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libgralloc_extra.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgralloc_extra.so \
+    vendor/tecno/le7n/proprietary/vendor/lib/egl/libgralloc_extra.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libgralloc_extra.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libgralloc_metadata.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgralloc_metadata.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libgralloctypes_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgralloctypes_mtk.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libgz_gp_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgz_gp_client.so \
@@ -912,6 +1043,7 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/lib/libh264dec_se.ca7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libh264dec_se.ca7.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libh264enc_sa.ca7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libh264enc_sa.ca7.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libhevce_sb.ca7.android.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhevce_sb.ca7.android.so \
+    vendor/tecno/le7n/proprietary/vendor/lib/libhwc2onfbadapter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhwc2onfbadapter.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libhwm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhwm.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libhydra.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhydra.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libimgsensorca.so:$(TARGET_COPY_OUT_VENDOR)/lib/libimgsensorca.so \
@@ -965,11 +1097,13 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/lib/libpq_prot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpq_prot.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libqmc6308_le7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmc6308_le7.so \
     vendor/tecno/le7n/proprietary/vendor/lib/librgbwlightsensor.so:$(TARGET_COPY_OUT_VENDOR)/lib/librgbwlightsensor.so \
+    vendor/tecno/le7n/proprietary/vendor/lib/libsensorndkbridge.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorndkbridge.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libsimaka.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsimaka.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libsl_fp_impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsl_fp_impl.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libspeech_enh_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspeech_enh_lib.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libspeechparser_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspeechparser_vendor.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libssl-ss.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssl-ss.so \
+    vendor/tecno/le7n/proprietary/vendor/lib/libstagefright_softomx_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_softomx_plugin.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libstagefrighthw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefrighthw.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libstorage_otp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstorage_otp.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libstrongswan.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstrongswan.so \
@@ -978,6 +1112,7 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/lib/libtflite_mtk_static_R.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtflite_mtk_static_R.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libthermalalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthermalalgo.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libthha.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthha.so \
+    vendor/tecno/le7n/proprietary/vendor/lib/libtinyxml.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyxml.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libtranlog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtranlog.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libudf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libudf.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libutinterface_custom_md.so:$(TARGET_COPY_OUT_VENDOR)/lib/libutinterface_custom_md.so \
@@ -993,10 +1128,14 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/lib/libvp8enc_sa.ca7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvp8enc_sa.ca7.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libvp9dec_sa.ca7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvp9dec_sa.ca7.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libvpud_vcodec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpud_vcodec.so \
+    vendor/tecno/le7n/proprietary/vendor/lib/libvpx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpx.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libvt_custom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvt_custom.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libwo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwo.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libwpa_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwpa_client.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwvhidl.so \
+    vendor/tecno/le7n/proprietary/vendor/lib/mediacas/libclearkeycasplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediacas/libclearkeycasplugin.so \
+    vendor/tecno/le7n/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libdrmclearkeyplugin.so \
+    vendor/tecno/le7n/proprietary/vendor/lib/mediadrm/libmockdrmcryptoplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libmockdrmcryptoplugin.so \
     vendor/tecno/le7n/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libwvdrmengine.so \
     vendor/tecno/le7n/proprietary/vendor/lib/nfc_nci.st21nfc.st.so:$(TARGET_COPY_OUT_VENDOR)/lib/nfc_nci.st21nfc.st.so \
     vendor/tecno/le7n/proprietary/vendor/lib/ov02b10_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov02b10_mipi_raw_tuning.so \
@@ -1015,6 +1154,7 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/lib/s5kgm1stext2_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/s5kgm1stext2_mipi_raw_tuning.so \
     vendor/tecno/le7n/proprietary/vendor/lib/soundfx/libaudiopreprocessing_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libaudiopreprocessing_mtk.so \
     vendor/tecno/le7n/proprietary/vendor/lib/soundfx/libdiraceffect.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libdiraceffect.so \
+    vendor/tecno/le7n/proprietary/vendor/lib/soundfx/libdynproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libdynproc.so \
     vendor/tecno/le7n/proprietary/vendor/lib/vendor.fpsensor.hardware.fpsensorhidlsvc@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.fpsensor.hardware.fpsensorhidlsvc@2.0.so \
     vendor/tecno/le7n/proprietary/vendor/lib/vendor.mediatek.hardware.audio@6.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.audio@6.1.so \
     vendor/tecno/le7n/proprietary/vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so \
@@ -1022,6 +1162,7 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/lib/vendor.mediatek.hardware.camera.bgservice@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.camera.bgservice@1.1.so \
     vendor/tecno/le7n/proprietary/vendor/lib/vendor.mediatek.hardware.dfps@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.dfps@1.0.so \
     vendor/tecno/le7n/proprietary/vendor/lib/vendor.mediatek.hardware.gpu@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.gpu@1.0.so \
+    vendor/tecno/le7n/proprietary/vendor/lib/egl/vendor.mediatek.hardware.gpu@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/vendor.mediatek.hardware.gpu@1.0.so \
     vendor/tecno/le7n/proprietary/vendor/lib/vendor.mediatek.hardware.keymaster_attestation@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.keymaster_attestation@1.0.so \
     vendor/tecno/le7n/proprietary/vendor/lib/vendor.mediatek.hardware.keymaster_attestation@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.keymaster_attestation@1.1.so \
     vendor/tecno/le7n/proprietary/vendor/lib/vendor.mediatek.hardware.mms@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.mms@1.0.so \
@@ -1062,22 +1203,41 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/lib64/gc6153_serial_yuv_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/gc6153_serial_yuv_tuning.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/gc8034_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/gc8034_mipi_raw_IdxMgr.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/gc8034_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/gc8034_mipi_raw_tuning.so \
+    vendor/tecno/le7n/proprietary/vendor/lib64/hw/android.hardware.audio.effect@6.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.audio.effect@6.0-impl.so \
+    vendor/tecno/le7n/proprietary/vendor/lib64/hw/android.hardware.bluetooth.audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth.audio@2.0-impl.so \
+    vendor/tecno/le7n/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.0-impl-mediatek.so \
+    vendor/tecno/le7n/proprietary/vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so \
+    vendor/tecno/le7n/proprietary/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gatekeeper@1.0-impl.so \
+    vendor/tecno/le7n/proprietary/vendor/lib64/hw/android.hardware.gnss@2.1-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss@2.1-impl-mediatek.so \
+    vendor/tecno/le7n/proprietary/vendor/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/hw/android.hardware.graphics.composer@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.graphics.composer@2.1-impl.so \
+    vendor/tecno/le7n/proprietary/vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so \
+    vendor/tecno/le7n/proprietary/vendor/lib64/hw/android.hardware.memtrack@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.memtrack@1.0-impl.so \
+    vendor/tecno/le7n/proprietary/vendor/lib64/hw/android.hardware.renderscript@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.renderscript@1.0-impl.so \
+    vendor/tecno/le7n/proprietary/vendor/lib64/hw/android.hardware.thermal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.thermal@1.0-impl.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/hw/android.hardware.thermal@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.thermal@2.0-impl.so \
+    vendor/tecno/le7n/proprietary/vendor/lib64/hw/audio.bluetooth.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.bluetooth.default.so \
+    vendor/tecno/le7n/proprietary/vendor/lib64/hw/audio.primary.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.default.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/hw/audio.primary.mt6768.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.mt6768.so \
+    vendor/tecno/le7n/proprietary/vendor/lib64/hw/audio.r_submix.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.r_submix.default.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/hw/audio.r_submix.mt6768.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.r_submix.mt6768.so \
+    vendor/tecno/le7n/proprietary/vendor/lib64/hw/audio.usb.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.usb.default.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/hw/audio.usb.mt6768.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.usb.mt6768.so \
+    vendor/tecno/le7n/proprietary/vendor/lib64/hw/audio_policy.stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio_policy.stub.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/hw/dfps.mt6768.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/dfps.mt6768.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/hw/fingerprint.silead.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.silead.default.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/hw/fpsensor_fingerprint.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fpsensor_fingerprint.default.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/hw/gatekeeper.beanpod.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gatekeeper.beanpod.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/hw/gatekeeper.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gatekeeper.default.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/hw/gps.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gps.default.so \
+    vendor/tecno/le7n/proprietary/vendor/lib64/hw/gralloc.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gralloc.default.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/hw/hwcomposer.mt6768.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/hwcomposer.mt6768.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/hw/kmsetkey.beanpod.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/kmsetkey.beanpod.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/hw/libSoftGatekeeper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/libSoftGatekeeper.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/hw/lights.mt6768.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/lights.mt6768.so \
+    vendor/tecno/le7n/proprietary/vendor/lib64/hw/local_time.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/local_time.default.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/hw/memtrack.mt6768.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/memtrack.mt6768.so \
+    vendor/tecno/le7n/proprietary/vendor/lib64/hw/power.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/power.default.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/hw/power.mt6768.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/power.mt6768.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/hw/sensors.mt6768.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.mt6768.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/hw/thermal.mt6768.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/thermal.mt6768.so \
@@ -1093,6 +1253,7 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.nvram@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.nvram@1.1-impl.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.pq@2.6-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.pq@2.6-impl.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so \
+    vendor/tecno/le7n/proprietary/vendor/lib64/hw/vibrator.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vibrator.default.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/hw/vibrator.mt6768.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vibrator.mt6768.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/lbs_hidl_service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lbs_hidl_service-impl.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/lib3a.ae.core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.ae.core.so \
@@ -1161,6 +1322,7 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/lib64/libabfadp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libabfadp.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libacdk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdk.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libaedv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaedv.so \
+    vendor/tecno/le7n/proprietary/vendor/lib64/libalsautils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalsautils.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libamipengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libamipengine.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libanc_dc_base.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libanc_dc_base.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libanc_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libanc_hdr.so \
@@ -1185,12 +1347,14 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/lib64/libaudiocustparam_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiocustparam_vendor.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libaudiodcrflt_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiodcrflt_vendor.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libaudiofmtconv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiofmtconv.so \
+    vendor/tecno/le7n/proprietary/vendor/lib64/libaudiofoundation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiofoundation.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libaudioloudc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioloudc.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libaudioprimarydevicehalifclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioprimarydevicehalifclient.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libaudiotoolkit_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiotoolkit_vendor.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libaurisysdemo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaurisysdemo.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libbessound_hd_mtk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbessound_hd_mtk_vendor.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libblisrc32_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libblisrc32_vendor.so \
+    vendor/tecno/le7n/proprietary/vendor/lib64/libbluetooth_audio_session.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libbluetooth_audio_session_mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session_mediatek.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libbluetooth_hw_test.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_hw_test.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libbluetooth_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_mtk.so \
@@ -1255,6 +1419,7 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/lib64/libcvsd_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvsd_mtk.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libdenoise.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdenoise.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libdpframework.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdpframework.so \
+    vendor/tecno/le7n/proprietary/vendor/lib64/libdrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrm.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libeffecthal.base.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libeffecthal.base.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libeyedetector.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libeyedetector.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libfacedetector.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfacedetector.so \
@@ -1274,14 +1439,19 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/lib64/libfpspolicy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfpspolicy.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libfsmaudio.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfsmaudio.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libged.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libged.so \
+    vendor/tecno/le7n/proprietary/vendor/lib64/egl/libged.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libged.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libgpu_aux.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgpu_aux.so \
+    vendor/tecno/le7n/proprietary/vendor/lib64/egl/libgpu_aux.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libgpu_aux.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libgpud.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgpud.so \
+    vendor/tecno/le7n/proprietary/vendor/lib64/egl/libgpud.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libgpud.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libgralloc_extra.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgralloc_extra.so \
+    vendor/tecno/le7n/proprietary/vendor/lib64/egl/libgralloc_extra.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libgralloc_extra.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libgralloc_metadata.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgralloc_metadata.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libgralloctypes_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgralloctypes_mtk.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libgz_gp_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgz_gp_client.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libgz_uree.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgz_uree.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libhevce_sb.ca7.android.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhevce_sb.ca7.android.so \
+    vendor/tecno/le7n/proprietary/vendor/lib64/libhwc2onfbadapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwc2onfbadapter.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libhwm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwm.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libhydra.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhydra.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libifcutils_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libifcutils_mtk.so \
@@ -1296,6 +1466,8 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/lib64/libispcameraca.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libispcameraca.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libjpeg-alpha-oal_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpeg-alpha-oal_vendor.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libjpeg-alpha_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpeg-alpha_vendor.so \
+    vendor/tecno/le7n/proprietary/vendor/lib64/libkeystore-engine-wifi-hidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeystore-engine-wifi-hidl.so \
+    vendor/tecno/le7n/proprietary/vendor/lib64/libkeystore-wifi-hidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeystore-wifi-hidl.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libkmsetkey.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkmsetkey.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libksensor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libksensor.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libladder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libladder.so \
@@ -1415,8 +1587,10 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/lib64/libsegmention.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsegmention.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libsegmentionPre.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsegmentionPre.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libsensor_custom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensor_custom.so \
+    vendor/tecno/le7n/proprietary/vendor/lib64/libsensorndkbridge.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorndkbridge.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libsimaka.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsimaka.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libsl_fp_impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsl_fp_impl.so \
+    vendor/tecno/le7n/proprietary/vendor/lib64/libsoft_attestation_cert.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsoft_attestation_cert.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libspeech_enh_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspeech_enh_lib.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libspeechparser_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspeechparser_vendor.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libssl-ss.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssl-ss.so \
@@ -1434,6 +1608,7 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/lib64/libtflite_native_inference.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtflite_native_inference.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libtflite_native_seginference.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtflite_native_seginference.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libthha.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthha.so \
+    vendor/tecno/le7n/proprietary/vendor/lib64/libtinyxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libtneclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtneclient.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libtnev.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtnev.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libtranlog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtranlog.so \
@@ -1449,10 +1624,14 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/lib64/libvidhance.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libwa_dof.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwa_dof.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libwa_rtdof.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwa_rtdof.so \
+    vendor/tecno/le7n/proprietary/vendor/lib64/libwifi-hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwifi-hal.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libwifitest.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwifitest.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libwo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwo.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libwpa_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwpa_client.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwvhidl.so \
+    vendor/tecno/le7n/proprietary/vendor/lib64/mediacas/libclearkeycasplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediacas/libclearkeycasplugin.so \
+    vendor/tecno/le7n/proprietary/vendor/lib64/mediadrm/libdrmclearkeyplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libdrmclearkeyplugin.so \
+    vendor/tecno/le7n/proprietary/vendor/lib64/mediadrm/libmockdrmcryptoplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libmockdrmcryptoplugin.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libwvdrmengine.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/mtkcam/libmtkcam_streaminfo_plugin-p1stt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mtkcam/libmtkcam_streaminfo_plugin-p1stt.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/nfc_nci.st21nfc.st.so:$(TARGET_COPY_OUT_VENDOR)/lib64/nfc_nci.st21nfc.st.so \
@@ -1486,6 +1665,7 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/lib64/s5kgm1stext2_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/s5kgm1stext2_mipi_raw_IdxMgr.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/s5kgm1stext2_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/s5kgm1stext2_mipi_raw_tuning.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/soundfx/libaudiopreprocessing_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libaudiopreprocessing_mtk.so \
+    vendor/tecno/le7n/proprietary/vendor/lib64/soundfx/libdynproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libdynproc.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/vendor.fpsensor.hardware.fpsensorhidlsvc@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.fpsensor.hardware.fpsensorhidlsvc@2.0.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/vendor.mediatek.hardware.aee@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.aee@1.0.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/vendor.mediatek.hardware.atci@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.atci@1.0.so \
@@ -1506,6 +1686,7 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/lib64/vendor.mediatek.hardware.engineermode@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.engineermode@1.2.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/vendor.mediatek.hardware.engineermode@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.engineermode@1.3.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/vendor.mediatek.hardware.gpu@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.gpu@1.0.so \
+    vendor/tecno/le7n/proprietary/vendor/lib64/egl/vendor.mediatek.hardware.gpu@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/vendor.mediatek.hardware.gpu@1.0.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.keymaster_attestation@1.0.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.keymaster_attestation@1.1.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/vendor.mediatek.hardware.lbs@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.lbs@1.0.so \
