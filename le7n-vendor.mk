@@ -1030,6 +1030,7 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/lib/libfpspolicy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfpspolicy.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libfsmaudio.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfsmaudio.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libged.so:$(TARGET_COPY_OUT_VENDOR)/lib/libged.so \
+    vendor/tecno/le7n/proprietary/vendor/lib/libgpu_aux.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgpu_aux.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libgpud.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgpud.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libgralloc_extra.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgralloc_extra.so \
     vendor/tecno/le7n/proprietary/vendor/lib/libgralloc_metadata.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgralloc_metadata.so \
@@ -1449,6 +1450,7 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/le7n/proprietary/vendor/lib64/libfpspolicy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfpspolicy.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libfsmaudio.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfsmaudio.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libged.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libged.so \
+    vendor/tecno/le7n/proprietary/vendor/lib64/libgpu_aux.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgpu_aux.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libgpud.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgpud.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libgralloc_extra.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgralloc_extra.so \
     vendor/tecno/le7n/proprietary/vendor/lib64/libgralloc_metadata.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgralloc_metadata.so \
