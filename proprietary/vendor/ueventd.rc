@@ -143,3 +143,8 @@
 
 # Resume-on-Reboot
 /dev/access-kregistry     0660   system     system
+
+# CMDQ / Display
+/dev/mtk_cmdq             0664   system     system
+/dev/mtk_mdp              0660   system     system
+/dev/mtk_disp_mgr         0660   system     system
